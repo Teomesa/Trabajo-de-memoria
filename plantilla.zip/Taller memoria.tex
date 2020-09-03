@@ -1,4 +1,4 @@
-documentclass{article}
+\documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{listings}
@@ -37,7 +37,6 @@ documentclass{article}
 \end{titlepage}
 
 
-
 \section{Desarrollo del taller} \label{contenido}
 
 \subsection{Defina que es la memoria del computador.}
@@ -47,13 +46,63 @@ La memoria es el cerebro del computador ya que está es la que se encarga de tra
 
 \subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.}
 -Memoria RAM: La memoria RAM es la que se encarga de guardar y mantener abierto o en segundo plano los datos de una aplicación.\newline
+
+\begin{figure}[h]
+\includegraphics[width=6cm]{Memoria.jpg}
+\centering
+\caption{Memoria RAM}
+\end{figure}
+
 -Memoria ROM: Es la que se encarga de almacenar los datos de todas las aplicaciones y del sistema operativo.\newline
--Memoria cache: Área de almacenamiento dedicada a los datos usados o solicitados con más frecuencia para su recuperación a gran velocidad \newline
+
+\begin{figure}[h]
+\includegraphics[width=6cm]{ssd.jpg}
+\centering
+\caption{memoria ROM}
+\end{figure}
+
+-Memoria cache: Área de almacenamiento dedicada a los datos usados o solicitados con más frecuencia para su recuperación a gran velocidad, normalmente se ejecuta en el procesador \newline
+\begin{figure}[h]
+\includegraphics[width=6cm]{Cache.jpg}
+\centering
+\caption{Memoria cache}
+\end{figure}
+
 -Memoria DRAM: La memoria dinámica pierde su carga progresivamente, necesitando de un circuito dinámico de refresco que, cada cierto período, revisa dicha carga y la repone en un ciclo de refresco. \newline
+\begin{figure}[h]
+\includegraphics[width=4cm]{Dinamica.jpeg}
+\centering
+\caption{memoria DRAM}
+\end{figure}
+
 -Memoria SRAM: Basada en semiconductores, capaz de mantener los datos, mientras siga alimentada, sin necesidad de circuito de refresco. \newline
--Memoria Flash: Permite la lectura y escritura de múltiples posiciones de memoria en la misma operación. \newline
+\begin{figure}[h]
+\includegraphics[width=6cm]{Estatica.jpg}
+\centering
+\caption{memoria SRAM}
+\end{figure}
+
+-Memoria Flash: Permite la lectura y escritura de datos, normalmente son portatiles debido a que son muy pequeñas. \newline
+\begin{figure}[h]
+\includegraphics[width=6cm]{Flash.jpg}
+\centering
+\caption{memoria Flash}
+\end{figure}
+
 -Memoria Virtual: Es la memoria que se encarga de brindar tanto memoria para el usuario como para si misma, normalmente desde la unidad ROM \newline
+\begin{figure}[h]
+\includegraphics[width=6cm]{Virtual.png}
+\centering
+\caption{memoria Virtual}
+\end{figure}
+
 -Memoria VRAM: Es la memoria de video la cual permite ejecutar juegos, programas de alto nivel que requieran de muchos requisitos, en si es una memoria fundamental para un computador ya que es la que permite la alta calidad de imagen. \newline
+\begin{figure}[h]
+\includegraphics[width=4cm]{Vram.jpg}
+\centering
+\caption{memoria VRAM}
+\end{figure}
+
 \subsection{Describa la manera como se gestiona la memoria en un computador.}
 1-Al iniciar el sistema operativo, los procesos de ejecucion del sistema se almacenan en el sistema \newline
 2-Todos los programas se van a la memoria \newline
@@ -61,57 +110,21 @@ La memoria es el cerebro del computador ya que está es la que se encarga de tra
 4-Cuando la memoria llena su capacidad de frecuencia, empieza a liberar datos o aplicaciones para disminuir espacio\newline
 5-Vuelve a iniciar el ciclo de almacenamiento y liberar las secciones de memoria que ya no se utilizan para que estén disponibles para otros programas. \newline
 6-Cuando se apaga el equipo, se borra toda la informacion de la memoria.\newline
+
+
 \subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
 
-Esto depende de muchos factores.
+Esto depende de muchos factores. \newline
 
 Lo que hace rápido una memoria de otra es la frecuencia de lectura de datos, la velocidad determina la rapidez a la que es capaz de trabajar la memoria RAM y afecta, junto con el bus de datos, a su ancho de banda. Una mayor velocidad permite realizar transferencias en menos tiempo. Las operaciones de almacenar, borrar y Re almacenar nueva información y datos se completarán más rápidamente, lo que en algunos casos puede marcar una diferencia importante de rendimiento. También es muy importante la capacidad de la memoria debido a que, si una aplicación pide una alta capacidad de almacenamiento para sus datos y tenemos una memoria con poca capacidad, esté programa se ejecutara de manera incorrecta, pero si tenemos una memoria de alta capacidad no tendremos problemas para ejecutar ese mismo programa.
 
 
-
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
-
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
-
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
-
-int main()
-{
-    int i;
-
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
-
-    return 0;
-}
-\end{lstlisting}
-
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-En la sección de teoremas (\ref{contenido})
-
 \section{Conclusión} \label{conclulsion}
+
+Así mismo, sabiendo que tipo memorias existen y para que se utilizan, la memoria es el núcleo central de un computador, cabe decir que sin una memoria ningún equipo electrónico encendería ya que la memoria se encarga de distribuir información de un lugar a otro y también se encarga de almacenarla, por decirlo de una manera abstracta, la memoria es el cerebro del computador, eso quiere decir que es la que facilita que un computador realice diferentes operaciones simultáneamente.
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
+
 
 \end{document}
